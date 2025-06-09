@@ -19,7 +19,7 @@ Pygments==2.19.1
 pytest==8.4.0
 python-dotenv==1.1.0
 PyYAML==6.0.2
--e git+https://github.com:hammer1209/hammer1209/sample-webhook-1.git@00f96d8b7014b55c6b0450c02aa7dfe692e90057#egg=sample_webhook
+-e git+https://github.com/hammer1209:hammer1209/sample-webhook-1.git@00f96d8b7014b55c6b0450c02aa7dfe692e90057#egg=sample_webhook
 sniffio==1.3.1
 starlette==0.46.2
 tomli==2.2.1
