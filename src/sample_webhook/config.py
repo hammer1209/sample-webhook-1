@@ -4,7 +4,7 @@ import dataclasses
 from pydantic_settings import BaseSettings
 
 # TODO: Use the configuration to identify where the indexing logic is that needs to be run?
-# TODO: We shouldn't need to know the github repo that initiated the push (I don't believe)
+# TODO: We shouldn't need to know the github repo that initiated the push
 
 class Settings(BaseSettings):
     """
