@@ -13,10 +13,13 @@ def handle_webhook_event(event_data):
         # Process the merged pull request
         pr_title = event_data['pull_request']['title']
         pr_number = event_data['pull_request']['number']
-        # Add your logic here (e.g., notify a service, update a database, etc.)
+        
+        # TODO: Add your logic here (e.g., notify a service, update a database, etc.)
+        # TODO: Run the indexing agent/code
+
         return f"Pull request #{pr_number} titled '{pr_title}' has been merged."
     
-    return "Event not processed."
+    return None
 
 def validate_event_data(event_data):
     """

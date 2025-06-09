@@ -9,4 +9,3 @@ def sample_webhook_client():
 
     client = TestClient(app)
     yield client
-```
