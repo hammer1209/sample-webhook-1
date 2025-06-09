@@ -4,9 +4,9 @@ This project implements a FastAPI application that listens for GitHub webhook ev
 
 ## Features
 
-- FastAPI-based webhook listener
-- Handles GitHub pull request merged events
-- Configurable via environment variables
+-   FastAPI-based webhook listener
+-   Handles GitHub pull request merged events
+-   Configurable via environment variables
 
 ## Project Structure
 
@@ -40,29 +40,32 @@ sample-webhook
 ## Setup Instructions
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/hammer1209/sample-webhook.git
-   cd sample-webhook
-   ```
+
+    ```bash
+    git clone https://github.com/hammer1209/sample-webhook.git
+    cd sample-webhook
+    ```
 
 2. **Create a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
 3. **Install dependencies:**
-   ```bash
-   poetry install
-   ```
+
+    ```bash
+    poetry install
+    ```
 
 4. **Configure environment variables:**
    Copy `.env.example` to `.env` and update the values as needed.
 
 5. **Run the application:**
-   ```bash
-   uvicorn src/sample_webhook.main:app --reload
-   ```
+    ```bash
+    uvicorn src/sample_webhook.main:app --reload
+    ```
 
 ## Usage
 
@@ -75,3 +78,9 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Prompt
+
+The initial version of this project was generated using "Claude 3.7 Sonnet" and the following prompt:
+
+You are an expert Python software developer. Create a GitHub webhook using Python 3.12 and FastAPI that is called when a pull request is merged into the main branch of hammer1209/sample-webhook GitHub repository. Update the files and folder structure to adhere to Python project best practices.
